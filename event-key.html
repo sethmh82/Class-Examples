@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Looping Through Arrays</title>
+  </head>
+  <body>
+
+    KEY <h1 id="user-text">NONE</h1>
+
+    <script>
+
+
+
+// Get a Random Number between 1 and 3
+function randomNum() {
+var x = Math.floor((Math.random() * 3) + 1);
+}
+
+// Give each person a number
+var comp = "randomNum"
+
+//1 is rock
+//2 is paper
+//3 is scissors
+
+
+// Key Press Event
+var userText = document.getElementById("user-text");
+document.onkeyup = function(event) {
+userText.textContent = event.key;
+  };
+
+
+  
+
+
+    </script>
+    
+  </body>
+</html>

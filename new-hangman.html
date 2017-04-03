@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<!--- Alright first I should setup the scoreboard. This will list the lives left, the letters guessed, and the current word being guessed -->
+
+Lives: <span id="user-lives"><strong><br>
+Letters Used: <span id="letters-used"><strong><br>
+Word: <span id="letter1"><strong><span id="letter2"><strong><span id="letter3"><strong><br>
+
+<div id="game">
+
+</div>
+
+<!-- Now, start the javascript magic -->
+
+	<script type="text/javascript">
+	
+		// Number of lives
+		var lives = 6
+		
+		// Word Being Guessed
+		var theWord = [ "C", "A", "T"]
+
+		// List of letters used
+		var lettersUsed = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+		
+		// This will be our function that runs whenever a key is pressed.
+		
+		document.onkeyup = function(event) {
+			
+			//What key is pressed
+			var letterGuess = event.key;
+			
+			// Tell the console what key
+			console.log(letterGuess)
+			
+		if (letterGuess == "C")
+			
+			alert ("You guessed correctly");
+			
+			var lettersUsed1 = document.getElementById("letter1");
+			
+			lettersUsed1.textContent = (lettersUsed1 + "C");
+			
+			
+		if (letterGuess == "A")
+			
+			alert ("You guessed correctly");
+			
+			var lettersUsed2 = document2.getElementById("letter2");
+			
+			lettersUsed2.textContent = (lettersUsed2 + "A");
+			
+		if (letterGuess == "T")
+			
+			alert ("You guessed correctly");
+			
+			var lettersUsed3 = document.getElementById("letter3");
+			
+			lettersUsed3.textContent = (lettersUsed3 + "T");
+			
+			
+			
+			
+			
+		};
+	
+	</script>	
+</body>
+</html>

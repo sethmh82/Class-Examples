@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	Wins: <span id="user-wins"><strong><br>
+	Losses: <span id="user-losses"><strong><br>
+	Ties: <span id="user-ties"><strong><br>
+
+	 <div id="game">
+
+    </div>
+
+
+
+   <script type="text/javascript">
+
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var options = ["r", "p", "s"];
+
+      var wins = 0
+      var losses = 0
+      var ties = 0
+
+
+
+      // This function is run whenever the user presses a key.
+      document.onkeyup = function(event) {
+
+        // Determines which key was pressed
+        var userGuess = event.key;
+
+        // Alerts the key the user pressed (userGuess).
+        console.log(userGuess);
+
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = options[Math.floor(Math.random() * options.length)];
+
+        // Alerts the Computer's guess.
+        console.log(computerGuess);
+
+
+	if (userGuess == 'r' && computerGuess == 'p')
+	alert("Computer's Paper Beats Your Rock");
+	var userLosses = document.getElementById("user-ties");
+	userTies.textContent = (ties + 1);
+	
+	if (userGuess == 'p' && computerGuess == 'r')
+	alert("Computer's Paper Beats Your Rock");
+	var userWins = document.getElementById("user-wins");
+	userWins.textContent = (wins + 1);
+	
+	if (userGuess == 's' && computerGuess == 'p')
+	alert("Computer's Paper Beats Your Rock");
+	var userLosses = document.getElementById("user-losses");
+	userLosses.textContent = (wins + 1);
+
+
+   };
+    </script>
+
+</body>
+</html>
