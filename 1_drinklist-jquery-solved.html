@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+
+  <!-- Here we create a generic drink-options div -->
+  <div id="drink-options"></div>
+<br><br>
+
+ <div id="drink-options2"></div>
+
+
+
+  <script type="text/javascript">
+
+    // Array holds all of the drinks available
+    var drinkList = [
+      "Coffee: $5",
+      "Espresso: $7",
+      "Cappuccino: $6",
+      "Latte: $4",
+      "Tea: $3",
+      "Ice Coffee: $6",
+      "Ice Espresso: $8",
+      "Ice Latte: $6",
+      "Ice Tea: $4"
+    ];
+
+
+//var drinkOptions = document.getElementById("drink-options");
+
+
+//for (var i = 0; i < drinkList.length; i++) {
+
+
+ // var divImade = document.createElement("div");
+
+
+//  divImade.innerHTML = drinkList[i];
+
+
+//  drinkOptions.appendChild(divImade); }
+
+
+
+
+
+//var drinkOptionsJq = $("drink-options");
+
+for (var i = 0; i < drinkList.length; i++) {
+$("#drink-options").append(drinkList[i] + "<br>"); 
+}
+
+
+
+
+
+$.each(drinkList, function(num, drink) {
+  var mikesDiv = $("<div>");
+  mikesDiv.html(drink);
+$("#drink-options2").append(mikesDiv);
+});
+
+
+//$("#drink-options").append("<br>");
+
+
+
+
+  </script>
+
+</body>
+</html>
